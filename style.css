@@ -67,20 +67,6 @@ main,
   color: var(--text);
 }
 
-.site-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.site-nav a {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.site-nav a:hover {
-  color: var(--text);
-}
-
 main {
   padding-top: 56px;
   padding-bottom: 56px;
@@ -100,12 +86,6 @@ main {
 
 section + section {
   margin-top: 56px;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: 1.15rem;
-  letter-spacing: 0.02em;
 }
 
 .project-list {
