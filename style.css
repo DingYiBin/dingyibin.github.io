@@ -98,19 +98,27 @@ section + section {
 
 .project {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
   padding: 20px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  color: var(--text);
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-.project:hover {
+.project:hover,
+.project:focus-within {
   border-color: var(--accent);
   transform: translateY(-2px);
+}
+
+.project-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text);
 }
 
 .project-title {
@@ -120,6 +128,17 @@ section + section {
 .project-desc {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.project-source {
+  flex: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.project-source:hover {
+  color: var(--accent);
 }
 
 .site-footer {
